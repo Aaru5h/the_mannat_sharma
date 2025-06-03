@@ -11,7 +11,7 @@ const MessagePage = () => {
   const messageParagraphs = [
     "Happy Birthday, Kammo! 🌟",
     
-    "Aaj ka din sirf tera hai — ek dum mast waala day 👑✨",
+    "Aaj ka din sirf tera hai — ek dum mast waala happy birthday 👑✨",
     
     "Tujh jaise log zindagi mein ek baar milte hain, aur jo mil jaye… unki life sorted ho jaati hai.",
     
@@ -24,10 +24,11 @@ const MessagePage = () => {
     "Aaj sirf wish nahi kar raha...",
     "dil se dua hai — tu hamesha khush rahe, maze kare, aur duniya ko apni sparkle se chamkaaye!",
     
-    "Love you meri bestie,",
-    "Tere bina toh vibes bhi adhoori lagti hai 💫",
+    "Love you kammo (vaise waala nahi obv),",
+    "One of the bestest people to be with 💫",
+    "Glad tu meri zindagi mei waapis aa gayi",
     "Now go eat cake, dance like no one's watching, and soak in all the birthday love! 🥳🎂",
-    "Tera idiot-friend-for-life 😌",
+    "Tera namoona chomu 😌",
   ];
 
   useEffect(() => {

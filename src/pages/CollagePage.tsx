@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 
+import one from '../images/one.jpg';
+import two from '../images/two.jpg';
+import three from '../images/three.jpg'
+import four from '../images/four.jpg'
+import five from '../images/five.jpg'
+import six from '../images/six.jpg'
+import seven from '../images/seven.jpg'
+import eight from '../images/eight.jpg'
+
 const CollagePage = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [showContent, setShowContent] = useState(false);
@@ -11,51 +20,43 @@ const CollagePage = () => {
   const memoryPhotos = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop",
-      caption: "[Memory #1 - Add your caption here]",
-      date: "[Date]"
+      src: one,
+      caption: "Serving canine realness 🐶✨ Who needs a pet when you’re this adorable?",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop",
-      caption: "[Memory #2 - Add your caption here]",
-      date: "[Date]"
+      src: two,
+      caption: "Dog filter ON, bad vibes OFF. Snapchat royalty has entered the chat 👑",
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=400&fit=crop",
-      caption: "[Memory #3 - Add your caption here]",
-      date: "[Date]"
+      src: three,
+      caption: "Rocking them Shades😎",
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=400&fit=crop",
-      caption: "[Memory #4 - Add your caption here]",
-      date: "[Date]"
+      src: four,
+      caption: "POV: We said 'let’s be normal today' and then absolutely didn’t. 🤡",
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=400&fit=crop",
-      caption: "[Memory #5 - Add your caption here]",
-      date: "[Date]"
+      src: five,
+      caption: "Another day, another slay... featuring the world’s cutest digital doggo 🐕",
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=400&fit=crop",
-      caption: "[Memory #6 - Add your caption here]",
-      date: "[Date]"
+      src: six,
+      caption: "Elegance with a side of chaos",
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=entropy",
-      caption: "[Memory #7 - Add your caption here]",
-      date: "[Date]"
+      src: seven,
+      caption: "Chhotu sa baccha👶",
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=faces",
-      caption: "[Memory #8 - Add your caption here]",
-      date: "[Date]"
+      src: eight,
+      caption: "Gangsta Moment",
     }
   ];
 
@@ -81,10 +82,10 @@ const CollagePage = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-script text-birthday-gold mb-4">
-              Memory Lane 📸
+              Photo Lane 📸
             </h1>
             <p className="text-xl text-gray-600 font-elegant">
-              Our beautiful journey together
+              A collection of handpicked photos by yours truly
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-birthday-pink to-birthday-gold mx-auto rounded-full mt-4"></div>
           </div>
@@ -123,9 +124,6 @@ const CollagePage = () => {
                 {/* Photo Description */}
                 <div className="space-y-6">
                   <div className="bg-birthday-gold/20 rounded-2xl p-6">
-                    <h3 className="text-2xl font-script text-birthday-gold mb-2">
-                      {memoryPhotos[currentPhoto].date}
-                    </h3>
                     <p className="text-lg text-gray-700 font-elegant leading-relaxed">
                       {memoryPhotos[currentPhoto].caption}
                     </p>
@@ -157,7 +155,7 @@ const CollagePage = () => {
           {/* Photo Grid */}
           <div className="mb-12">
             <h2 className="text-3xl font-script text-center text-birthday-gold mb-8">
-              All Our Beautiful Moments ✨
+              All the Best Pictures ✨
             </h2>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -177,53 +175,11 @@ const CollagePage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                     <div className="absolute bottom-2 left-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      Memory {index + 1}
+                      Photo {index + 1}
                     </div>
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Timeline Effect */}
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-birthday-pink to-birthday-gold rounded-full"></div>
-            
-            <div className="space-y-12">
-              {memoryPhotos.slice(0, 4).map((photo, index) => (
-                <div key={`timeline-${photo.id}`} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                  <div className="flex-1">
-                    <div className={`bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 ${index % 2 === 0 ? 'mr-8' : 'ml-8'}`}>
-                      <h4 className="text-xl font-script text-birthday-gold mb-2">{photo.date}</h4>
-                      <p className="text-gray-700">{photo.caption}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="w-16 h-16 bg-birthday-gold rounded-full flex items-center justify-center shadow-lg z-10">
-                    <span className="text-white font-bold">{index + 1}</span>
-                  </div>
-                  
-                  <div className="flex-1"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Customization Instructions */}
-          <div className="mt-16 p-8 bg-gradient-to-r from-birthday-mint/40 to-birthday-lavender/40 rounded-3xl">
-            <h3 className="text-2xl font-script text-center text-birthday-gold mb-4">
-              📸 Photo Upload Instructions
-            </h3>
-            <div className="text-center space-y-4 text-gray-700 font-elegant">
-              <p>
-                <strong>Ready to add your real memories?</strong> Simply replace the placeholder images with your actual photos!
-              </p>
-              <p>
-                Update the captions and dates to reflect your real shared experiences. Each photo slot is designed to showcase your most treasured moments together.
-              </p>
-              <p className="text-birthday-gold font-script text-lg">
-                "The best memories are made with the best friends" ✨
-              </p>
             </div>
           </div>
 

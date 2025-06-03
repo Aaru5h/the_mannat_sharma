@@ -10,20 +10,20 @@ const PoemPage = () => {
 
   // Placeholder poem structure - you can easily replace this
   const poemLines = [
-    "Tere bina duniya hai thodi si feeki,",
-    "Tu aaye toh har shaam ban jaaye filmi. 🌆",
-    "Teri baatein — ek comfort zone,",
-    "Tera smile — mera happy tone. 😊",
-    "Kabhi hero, kabhi villain si tu,",
-    "Kabhi sweet si chai, toh kabhi full caffeine brew! ☕",
-    "Tu hasi toh lagta hai sab kuch sahi hai,",
-    "Tu na ho toh sab kuch feels... not right. 🥺",
-    "Teri dosti — meri proudest find,",
-    "Ek aisi bond, jise duniya bhi na define kar paaye in kind. 🤝",
-    "Aaj tere birthday pe yeh kehna hai zaroori,",
-    "Tu hai meri life ki sabse khoobsurat theory. 📖",
-    "Khush rehna, chamakti rehna forever,",
-    "Kyunki tu jaise koi nahi... kabhi bhi, kabhi bhi never. 🌸"
+    "Teri dosti hai ek nayi roshni, ek khubsurat raah,",
+  "Jahan har lamha ho mehka hua, jaise bahaar ka saath. 🌸",
+  "Tu hai woh saathi, jo har dard ko mita de,",
+  "Aur muskurahat se zindagi ko phir se saja de. 😊",
+  "Kabhi shab-e-guzarish, kabhi subah-e-nayi umeed,",
+  "Tere sang chalna hai mere liye ek khoobsurat seed. 🌅",
+  "Tere alfaaz hain jaise shayari ki madhur dhun,",
+  "Jo dil ko chhoo jaye, har dard ko kar de dhoon. 🎶",
+  "Teri dosti mein hai wo gehraayi, jo lafzon se pare,",
+  "Jise sirf dil samajh sake, wo pyara sa izhaar-e-hunar. 🤝",
+  "Tere bina adhoora hai mera safar ye zindagi ka,",
+  "Tu hai woh chaman, jahan khilta hai mera har khwab. 🌷",
+  "Yeh dosti rahe yunhi sadaa baaqi, kabhi kam na ho,",
+  "Teri hansi meri duniya hai, jo sadaa chamakti rahe woh. ✨"
   ];
 
   useEffect(() => {
@@ -113,14 +113,6 @@ const PoemPage = () => {
             </div>
           </div>
 
-          {/* Instructions for customization */}
-          <div className="mt-8 p-6 bg-birthday-gold/20 rounded-2xl">
-            <p className="text-center text-gray-700 font-elegant">
-              <strong>✏️ Customization Note:</strong> Replace the placeholder lines with your own heartfelt verses! 
-              The poem structure is ready for your personal touch.
-            </p>
-          </div>
-
           {/* Navigation */}
           {currentLine >= poemLines.length - 1 && (
             <div className="text-center mt-8 space-y-4 animate-fade-in-up">
@@ -133,7 +125,7 @@ const PoemPage = () => {
                     size="lg"
                     className="bg-gradient-to-r from-birthday-gold to-yellow-400 hover:from-yellow-400 hover:to-birthday-gold text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
-                    👑 About Her Royal Excellence
+                    👑 About The Woman of The Hour
                   </Button>
                 </Link>
                 <Link to="/photos">
@@ -142,7 +134,7 @@ const PoemPage = () => {
                     variant="outline"
                     className="border-2 border-purple-400 text-purple-600 hover:bg-purple-400 hover:text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
-                    📸 See Memories
+                    📸 See Some Handpicked Photos
                   </Button>
                 </Link>
               </div>
