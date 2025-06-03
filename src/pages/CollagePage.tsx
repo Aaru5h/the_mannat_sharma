@@ -85,7 +85,7 @@ const CollagePage = () => {
               Photo Lane 📸
             </h1>
             <p className="text-xl text-gray-600 font-elegant">
-              A collection of handpicked photos by yours truly
+              A collection of handpicked photos picked by yours truly
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-birthday-pink to-birthday-gold mx-auto rounded-full mt-4"></div>
           </div>
