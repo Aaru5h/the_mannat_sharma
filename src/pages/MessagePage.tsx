@@ -27,6 +27,7 @@ const MessagePage = () => {
     "Love you kammo (vaise waala nahi obv),",
     "One of the bestest people to be with 💫",
     "Glad tu meri zindagi mei waapis aa gayi",
+    "And I hope, aise hi mere saath rahegi",
     "Now go eat cake, dance like no one's watching, and soak in all the birthday love! 🥳🎂",
     "Tera namoona chomu 😌",
   ];
