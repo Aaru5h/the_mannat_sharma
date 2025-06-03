@@ -27,33 +27,27 @@ const AboutPage = () => {
   }, []);
 
   const profileData = {
-    nicknames: ["[Add her nicknames]", "[Funny nickname 2]", "[Sweet nickname 3]"],
+    nicknames: ["Kammo", "Moti", "Buddhi"],
     funFacts: [
-      "[Fun fact about her #1]",
-      "[Fun fact about her #2]", 
-      "[Fun fact about her #3]",
-      "[Fun fact about her #4]"
+      "Expert at anything she sets her mind to!",
+      "Brilliant editor", 
+      "One of the Smartest and Kindest people I know",
+      "Always available"
     ],
     bestAt: [
-      "[What she's best at #1]",
-      "[What she's best at #2]",
-      "[What she's best at #3]",
-      "[What she's best at #4]"
+      "Editing skills top class😎",
+      "Dance🥴",
+      "Poetry",
+      "Bhai ki awaaz🤌"
     ],
     brainStats: [
-      { skill: "Sarcasm", percentage: 97 },
+      { skill: "Sarcasm", percentage: 90 },
       { skill: "Kindness", percentage: 100 },
-      { skill: "Humor", percentage: 95 },
-      { skill: "Chaos Energy", percentage: 85 },
-      { skill: "Wisdom", percentage: 90 },
+      { skill: "Humor", percentage: 98.7 },
+      { skill: "Chaos Energy", percentage: 95 },
+      { skill: "Wisdom", percentage: 94 },
       { skill: "Adventure Spirit", percentage: 88 }
     ],
-    quotes: [
-      "[Her funny quote #1]",
-      "[Inside joke reference]",
-      "[Her wise saying]",
-      "[Funny thing she always says]"
-    ]
   };
 
   const Section = ({ index, title, icon, children }: { index: number; title: string; icon: string; children: React.ReactNode }) => (
@@ -148,7 +142,7 @@ const AboutPage = () => {
               </div>
             </Section>
 
-            {/* Quotes */}
+            {/* Quotes
             <Section index={4} title="Famous Quotes" icon="🗣️">
               <div className="space-y-4">
                 {profileData.quotes.map((quote, i) => (
@@ -159,17 +153,17 @@ const AboutPage = () => {
                   </div>
                 ))}
               </div>
-            </Section>
+            </Section> */}
 
             {/* Special Achievement */}
             <Section index={5} title="Special Achievement" icon="🌟">
               <div className="text-center bg-gradient-to-r from-birthday-gold/20 to-birthday-pink/20 rounded-xl p-6">
-                <div className="text-4xl mb-4">🏆</div>
+                <div className="text-4xl mb-4">Mujhse Dosti🏆</div>
                 <h4 className="font-script text-2xl text-birthday-gold mb-2">
-                  World's Best Friend Award
+                  World's Bestestestest Friend Award
                 </h4>
                 <p className="text-gray-700">
-                  Officially certified as the most amazing best friend in existence. 
+                  Officially certified as the most amazing bestestestest friend in existence. 
                   No competition needed! 💕
                 </p>
               </div>
@@ -179,23 +173,23 @@ const AboutPage = () => {
           {/* Customization Note */}
           <div className="mt-12 p-6 bg-birthday-mint/30 rounded-2xl">
             <p className="text-center text-gray-700 font-elegant">
-              <strong>✏️ Personalization Ready:</strong> Replace all the bracketed placeholders with her actual nicknames, 
-              fun facts, achievements, and memorable quotes to make this truly special!
+              <strong>Happy Unnisva Janamdin🥳</strong> May tu jiye hazaarin laakhon saal aur mai tujhse aise hi tang karta rahu🥴
             </p>
+            <p>Lobe U💛</p>
           </div>
 
           {/* Navigation */}
           {visibleSections.length >= 6 && (
             <div className="text-center mt-8 animate-fade-in-up">
               <p className="text-lg text-gray-600 mb-4 font-elegant">
-                Ready to walk down memory lane? 📸✨
+                Photos Dekhte hai thodi bohot chal 📸✨
               </p>
-              <Link to="/memories">
+              <Link to="/photos">
                 <Button 
                   size="lg"
                   className="bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
-                  📸 See Our Memories
+                  📸 See a Little Something
                 </Button>
               </Link>
             </div>

@@ -9,19 +9,25 @@ const MessagePage = () => {
   const [showContent, setShowContent] = useState(false);
 
   const messageParagraphs = [
-    "Hey gorgeous! 🌟",
+    "Happy Birthday, Kammo! 🌟",
     
-    "I can't believe another year has passed, and here we are celebrating YOU again! Time really does fly when you're having the best time of your life with your favorite person (that's me, obviously 😉).",
+    "Aaj ka din sirf tera hai — ek dum mast waala day 👑✨",
     
-    "I remember [INSERT SPECIFIC MEMORY HERE - like that time we...]. You had me laughing so hard I nearly [INSERT FUNNY DETAIL]. That's just one of about a million reasons why you're absolutely irreplaceable.",
+    "Tujh jaise log zindagi mein ek baar milte hain, aur jo mil jaye… unki life sorted ho jaati hai.",
     
-    "Thank you for being the friend who [INSERT WHAT SHE DOES - listens to my 3am thoughts, sends random memes that make my day, always knows exactly what to say]. You've made my life so much brighter, funnier, and way more chaotic (in the best way possible).",
+    "Teri har smile ek vibe hai,",
+    "Tera har rant ek episode,",
+    "Aur teri dosti... ek priceless blessing 💖",
     
-    "I'm grateful for your [INSERT HER QUALITIES - incredible sense of humor, your caring heart, the way you light up every room]. You inspire me every day to be better, laugh harder, and worry less.",
+    "Kabhi kabhi sochta hoon ki agar tu meri life mein na hoti, toh main kitna zyada boring insaan hota 😅",
     
-    "So here's to another year of [INSERT SHARED ACTIVITIES/HOPES - inside jokes, spontaneous adventures, late-night conversations, being absolutely ridiculous together]. I can't wait to see what amazing things this new year brings you!",
+    "Aaj sirf wish nahi kar raha...",
+    "dil se dua hai — tu hamesha khush rahe, maze kare, aur duniya ko apni sparkle se chamkaaye!",
     
-    "Happy Birthday to the most wonderful human I know. You deserve all the love, joy, and birthday cake in the world! 🎂✨"
+    "Love you meri bestie,",
+    "Tere bina toh vibes bhi adhoori lagti hai 💫",
+    "Now go eat cake, dance like no one's watching, and soak in all the birthday love! 🥳🎂",
+    "Tera idiot-friend-for-life 😌",
   ];
 
   useEffect(() => {
@@ -99,7 +105,7 @@ const MessagePage = () => {
           {currentParagraph >= messageParagraphs.length - 1 && (
             <div className="text-center mt-8 animate-fade-in-up">
               <p className="text-lg text-gray-600 mb-4 font-elegant">
-                Ready for something special? ✨
+                Aapke liye kuch likha hai ✨
               </p>
               <Link to="/poem">
                 <Button 

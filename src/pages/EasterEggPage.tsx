@@ -9,27 +9,28 @@ const EasterEggPage = () => {
   const [currentJoke, setCurrentJoke] = useState(0);
 
   const surpriseContent = [
-    {
-      type: "greeting",
-      content: "If You're Reading This, You're a Legend! 🏆"
-    },
-    {
-      type: "joke",
-      content: "Why did I make a whole website for your birthday? Because a simple 'Happy Birthday' text wasn't extra enough for someone as extra as you! 😂"
-    },
-    {
-      type: "meme",
-      content: "Me: I'll just make a simple birthday message\nAlso me: *creates an entire multi-page website with animations* 🤪"
-    },
-    {
-      type: "secret",
-      content: "Secret confession: I spent way too much time picking the perfect colors for this website because I knew you'd notice if they weren't perfect! 💅"
-    },
-    {
-      type: "surprise",
-      content: "[INSERT YOUR SPECIAL SURPRISE/GIFT MESSAGE HERE - maybe a hint about a real gift, a special plan, or a heartfelt surprise you have prepared!]"
-    }
-  ];
+  {
+    type: "greeting",
+    content: "If You're Reading This, You're a Legend! 🏆"
+  },
+  {
+    type: "joke",
+    content: "Why did I make a whole website for your birthday? Because a simple 'Happy Birthday' text wasn't extra enough for someone as extra as you! 😂"
+  },
+  {
+    type: "meme",
+    content: "Me: I'll just make a simple birthday message\nAlso me: *creates an entire multi-page website with animations* 🤪"
+  },
+  {
+    type: "secret",
+    content: "Secret confession: I spent way too much time picking the perfect colors for this website because I knew you'd notice if they weren't perfect! 💅"
+  },
+  {
+    type: "surprise",
+    content: "Okay, real talk: there's a tiny gift waiting for you IRL 🎁 (yes, a real one — not just this digital madness). But more than that, there's a plan. A plan to make one more beautiful memory with you — so be ready soon 😉✨"
+  }
+];
+
 
   useEffect(() => {
     setShowContent(true);
@@ -166,13 +167,6 @@ const EasterEggPage = () => {
             </p>
           </div>
 
-          {/* Customization Note */}
-          <div className="bg-birthday-mint/30 rounded-2xl p-6 mb-8">
-            <p className="text-gray-700 font-elegant">
-              <strong>🎯 Easter Egg Customization:</strong> Replace the surprise message above with your actual surprise - 
-              maybe a hint about a real gift, special plans, or a heartfelt message you've been saving for last!
-            </p>
-          </div>
 
           {/* Navigation Back */}
           <div className="space-y-4">

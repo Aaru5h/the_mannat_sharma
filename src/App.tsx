@@ -25,7 +25,7 @@ const App = () => (
           <Route path="/message" element={<MessagePage />} />
           <Route path="/poem" element={<PoemPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/memories" element={<CollagePage />} />
+          <Route path="/photos" element={<CollagePage />} />
           <Route path="/legend" element={<EasterEggPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

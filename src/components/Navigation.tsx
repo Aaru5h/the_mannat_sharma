@@ -13,7 +13,7 @@ const Navigation = ({ currentPage }: NavigationProps) => {
     { path: '/message', label: 'Message', icon: '💌' },
     { path: '/poem', label: 'Poem', icon: '✨' },
     { path: '/about', label: 'About Her', icon: '👑' },
-    { path: '/memories', label: 'Memories', icon: '📸' },
+    { path: '/photos', label: 'Photos', icon: '📸' },
   ];
 
   return (

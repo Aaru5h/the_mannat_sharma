@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import ConfettiAnimation from '@/components/ConfettiAnimation';
 import FloatingBalloons from '@/components/FloatingBalloons';
 import Navigation from '@/components/Navigation';
+import us from '@/images/us.jpg';
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -29,14 +30,14 @@ const HomePage = () => {
               HAPPY BIRTHDAY
             </h1>
             <h2 className="text-4xl md:text-6xl font-script text-birthday-gold drop-shadow-lg">
-              [Her Name]! 🎉
+              KAMMO! 🥳 🎉
             </h2>
           </div>
 
           {/* Photo placeholder */}
           <div className="relative mx-auto w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-birthday-gold animate-balloon">
             <img 
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+              src= {us}
               alt="Birthday girl"
               className="w-full h-full object-cover"
             />
@@ -47,7 +48,8 @@ const HomePage = () => {
           <div className="max-w-2xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-700 font-elegant leading-relaxed">
               Today we celebrate the most amazing, wonderful, 
-              and absolutely incredible person I know! 
+              and absolutely incredible person I know!
+              My Bestestest Friend
               🌟✨
             </p>
           </div>
@@ -83,12 +85,12 @@ const HomePage = () => {
               </Button>
             </Link>
             
-            <Link to="/memories">
+            <Link to="/photos">
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
-                📸 Memory Lane
+                📸 Photos
               </Button>
             </Link>
           </div>

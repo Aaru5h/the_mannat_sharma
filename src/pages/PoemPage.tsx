@@ -10,20 +10,20 @@ const PoemPage = () => {
 
   // Placeholder poem structure - you can easily replace this
   const poemLines = [
-    "On this special day when stars align,",
-    "I celebrate a friend so divine.",
-    "",
-    "[Your custom poem line 1]",
-    "[Your custom poem line 2]",
-    "",
-    "[Your custom poem line 3]",
-    "[Your custom poem line 4]",
-    "",
-    "[Your custom poem line 5]",
-    "[Your custom poem line 6]",
-    "",
-    "So here's to you on your birthday bright,",
-    "May all your dreams take joyful flight! 🌟"
+    "Tere bina duniya hai thodi si feeki,",
+    "Tu aaye toh har shaam ban jaaye filmi. 🌆",
+    "Teri baatein — ek comfort zone,",
+    "Tera smile — mera happy tone. 😊",
+    "Kabhi hero, kabhi villain si tu,",
+    "Kabhi sweet si chai, toh kabhi full caffeine brew! ☕",
+    "Tu hasi toh lagta hai sab kuch sahi hai,",
+    "Tu na ho toh sab kuch feels... not right. 🥺",
+    "Teri dosti — meri proudest find,",
+    "Ek aisi bond, jise duniya bhi na define kar paaye in kind. 🤝",
+    "Aaj tere birthday pe yeh kehna hai zaroori,",
+    "Tu hai meri life ki sabse khoobsurat theory. 📖",
+    "Khush rehna, chamakti rehna forever,",
+    "Kyunki tu jaise koi nahi... kabhi bhi, kabhi bhi never. 🌸"
   ];
 
   useEffect(() => {
@@ -136,7 +136,7 @@ const PoemPage = () => {
                     👑 About Her Royal Excellence
                   </Button>
                 </Link>
-                <Link to="/memories">
+                <Link to="/photos">
                   <Button 
                     size="lg"
                     variant="outline"
